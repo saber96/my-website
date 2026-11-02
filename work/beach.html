@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beach: Hard Light</title>
+<meta name="description" content="Painted huts half buried in sand, and parasols folded for the evening.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script>
+(function () { var d = document.documentElement; d.classList.add('js');
+  try { var m = localStorage.getItem('mode'); if (m === 'dark' || m === 'light') d.dataset.mode = m; } catch (e) {} })();
+</script>
+<script src="../pictures.js" defer></script>
+<script src="../site.js" defer></script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+  <a class="name" href="../index.html">Hard Light</a>
+  <nav class="nav" aria-label="Main">
+    <a href="../index.html" aria-current="page">Work</a>
+    <a href="../contact.html">Contact</a>
+    <button class="nav__button" type="button" data-explore aria-haspopup="dialog">Explore</button>
+    <button class="mode" type="button" data-mode-toggle aria-label="Dark mode" aria-pressed="false">
+      <svg class="mode__moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      <svg class="mode__sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    </button>
+  </nav>
+</header>
+<main id="main">
+<h1 class="visually-hidden">Beach</h1>
+<p class="intro">Painted huts half buried in sand, and parasols folded for the evening.</p>
+<div class="stack">
+  <img src="../images/beach-1.jpg" width="1920" height="1080" sizes="100vw" srcset="../images/beach-1-960.jpg 960w, ../images/beach-1.jpg 1920w" alt="Pastel beach huts half buried in sand under a blue sky" fetchpriority="high">
+  <img src="../images/beach-2.jpg" width="1920" height="1080" sizes="100vw" srcset="../images/beach-2-960.jpg 960w, ../images/beach-2.jpg 1920w" alt="Three painted beach huts on stilts against green pines" loading="lazy">
+  <img src="../images/beach-3.jpg" width="1920" height="1080" sizes="100vw" srcset="../images/beach-3-960.jpg 960w, ../images/beach-3.jpg 1920w" alt="Straw parasols and folded sunbeds on an empty beach at evening, waves behind" loading="lazy">
+</div>
+<p class="next"><a href="dunes.html">Dunes<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="m9 4 8 8-8 8"/></svg></a></p>
+</main>
+<footer class="footer">
+  <nav class="footer__links" aria-label="Footer">
+    <a href="../index.html">Work</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+  <p class="footer__legal">© 2026 Hard Light</p>
+  <p class="footer__credits" data-credits>Photographs: <a href="https://commons.wikimedia.org/wiki/File:Cabines_de_bain_Berck.jpg">Gzzz</a> (CC BY-SA 3.0); <a href="https://commons.wikimedia.org/wiki/File:Beach_huts_at_Wells-next-the-Sea.jpg">DeFacto</a> (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:Parasols,_Evening,_Beach,_Rincon_de_la_Victoria,_Andalusia,_Spain.jpg">Jebulon</a> (CC0). All from Wikimedia Commons.</p>
+</footer>
+<dialog class="viewer" data-viewer aria-label="A random picture">
+  <figure class="viewer__figure">
+    <figcaption aria-live="polite"><span data-viewer-caption></span> <small data-viewer-credit></small></figcaption>
+  </figure>
+  <div class="viewer__controls">
+    <button class="btn btn--ink" type="button" data-viewer-next autofocus>Another picture</button>
+    <a class="btn" data-viewer-subject href="../index.html">See the subject</a>
+    <button class="btn" type="button" data-viewer-close>Close</button>
+  </div>
+</dialog>
+</body>
+</html>
