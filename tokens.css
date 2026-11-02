@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light dark;
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-sm: 0.875rem; --text-md: 1rem; --text-name: clamp(1.5rem, 1vw + 1.2rem, 2.125rem); --text-title: clamp(1.25rem, 0.5vw + 1.05rem, 1.625rem); --text-intro: clamp(1.25rem, 1vw + 0.95rem, 1.875rem);
+  --color-paper: oklch(99.6% 0.001 250); --color-ink: oklch(16% 0.006 250); --color-muted: oklch(44% 0.01 250); --color-rule: oklch(16% 0.006 250);
+  --color-link: oklch(30% 0.05 260); --color-focus: oklch(45% 0.16 260); --color-accent: var(--color-link); --color-accent-ink: var(--color-paper);
+  --font-display: "Libre Franklin", ui-sans-serif, system-ui, sans-serif; --font-body: var(--font-display);
+  --gutter: clamp(16px, 3vw, 44px); --container: 1520px; --gap-grid: clamp(16px, 2.8vw, 40px); --gap-rows: clamp(32px, 3.5vw, 56px);
+  --z-toast: 500;
+}
+
+[data-mode="light"] { color-scheme: light; }
+[data-mode="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(16% 0.01 250); --color-ink: oklch(94% 0.006 250); --color-muted: oklch(72% 0.012 250); --color-rule: oklch(94% 0.006 250);
+  --color-link: oklch(84% 0.05 260); --color-focus: oklch(75% 0.13 260);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode]) {
+    --color-paper: oklch(16% 0.01 250); --color-ink: oklch(94% 0.006 250); --color-muted: oklch(72% 0.012 250); --color-rule: oklch(94% 0.006 250);
+    --color-link: oklch(84% 0.05 260); --color-focus: oklch(75% 0.13 260);
+  }
+}
